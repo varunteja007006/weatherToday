@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ThemeProvider } from "./theme-provider";
+import { ThemeProvider } from "next-themes";
 import { QueryClient, QueryClientProvider } from "react-query";
 // Create a client
 const queryClient = new QueryClient();
