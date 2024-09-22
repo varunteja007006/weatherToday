@@ -3,6 +3,7 @@
 import * as React from "react";
 import { ThemeProvider } from "next-themes";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 // Create a client
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ export default function Providers({
       >
         {children}
       </ThemeProvider>{" "}
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }

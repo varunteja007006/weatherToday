@@ -4,17 +4,13 @@ import WeatherComp from "./weather";
 
 export default function Main() {
   return (
-    <div className="w-full">
+    <div className="max-w-[1400px] dark:bg-blue-950 bg-orange-500 px-6 py-4 w-full min-h-screen dark:border-l-violet-950 dark:border-r-violet-950  ">
       <div className="grid grid-cols-1">
-        <div className="grid grid-cols-2">
-          <div>
-            <WeatherComp />{" "}
-          </div>
-          <div>
-            <SearchBox />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-5">
+          <WeatherComp /> <SearchBox />
         </div>
       </div>
+      <div></div>
     </div>
   );
 }

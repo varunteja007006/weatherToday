@@ -29,11 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-mono scroll-smooth`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-mono scroll-smooth text-black dark:text-white dark:bg-gray-900 bg-orange-100`}
       >
         <Providers>
           <Navbar />
-          <main className="min-w-[100%] min-h-screen text-black dark:text-white dark:bg-gray-900 bg-orange-100">
+          <main className="text-black dark:text-white dark:bg-gray-900 bg-orange-100">
             {children}
           </main>
         </Providers>
