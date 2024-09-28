@@ -14,19 +14,13 @@ import {
 import { cn } from "@/lib/utils";
 import ToolTip from "../tooltip";
 import { motion } from "framer-motion";
+import Icon from "../icon/Icon";
 
 export default function Navbar() {
   const store = useLocationStore((state) => state);
   return (
     <header className="px-6 mx-auto max-w-[1400px] flex-col gap-5 lg:flex-row py-4 flex items-center justify-between bg-orange-500 font-semibold dark:bg-blue-950">
-      <motion.div
-        initial={{ opacity: 0, x: -25 }}
-        animate={{ opacity: 1, x: 0 }}
-        className="flex flex-wrap items-center gap-2 text-lg"
-      >
-        <CloudMoonRain className="w-8 h-8" />
-        weatherToday
-      </motion.div>
+      <Icon />
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}

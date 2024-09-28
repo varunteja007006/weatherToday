@@ -72,13 +72,14 @@ export default function WeatherComp() {
             </div>
           </div>
           <div>
-            <div className="border p-1 border-orange-300 bg-orange-500 rounded-full inline-flex items-center justify-center">
+            <div className="border-2 p-1 border-orange-400 bg-orange-300 mb-1.5 dark:bg-gray-900 dark:border-white rounded-full inline-flex items-center justify-center">
               {store.weather?.current?.weather?.[0] ? (
                 <Image
                   src={`https://openweathermap.org/img/wn/${store.weather?.current?.weather?.[0]?.icon}.png`}
                   width={50}
                   height={50}
                   alt="weather-icon"
+                  className=" object-fill"
                 />
               ) : (
                 <Sparkles className="w-6 h-6 text-white" />
